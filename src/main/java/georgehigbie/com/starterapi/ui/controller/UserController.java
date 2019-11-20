@@ -1,6 +1,6 @@
 package georgehigbie.com.starterapi.ui.controller;
 
-import georgehigbie.com.starterapi.ui.models.request.UserDetailsRequestModel;
+import georgehigbie.com.starterapi.ui.model.request.UserDetailsRequestModel;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
