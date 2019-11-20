@@ -1,5 +1,6 @@
 package georgehigbie.com.starterapi.ui.controller;
 
+import georgehigbie.com.starterapi.ui.models.request.UserDetailsRequestModel;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -12,7 +13,7 @@ public class UserController {
     }
 
     @PostMapping
-    public String createUser(){
+    public String createUser(@RequestBody UserDetailsRequestModel userDetails){
         return "create user was called";
     }
 
