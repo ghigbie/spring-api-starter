@@ -1,8 +1,10 @@
 package georgehigbie.com.starterapi.shared.dto;
 
-public class UserDto {
+import java.io.Serializable;
 
-    private static final long serialVersionUID = 4865903039190150223L;
+public class UserDto implements Serializable {
+
+    private static final long serialVersionUID = -4174051200896907196L;
     private long id;
     private String firstName;
     private String lastName;
@@ -11,10 +13,6 @@ public class UserDto {
     private String encryptedPassword;
     private String emailverificationToken;
     private Boolean emailverificationStatus;
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
-    }
 
     public long getId() {
         return id;
